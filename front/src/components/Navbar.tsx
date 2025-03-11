@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [isVisible, setIsVisible] = useState(false);
+    const [playAnimation, setPlayAnimation] = useState(false);
 
     useEffect(() => {
-        setIsVisible(true);
+        setPlayAnimation(true);
     }, []);
 
     const toggleDrawer = () => {
@@ -38,8 +38,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="container mx-auto xl:max-w-6xl">
-            <div className={`flex flex-row justify-between items-center p-4 transform transition-all duration-500 ease-in-out ${ isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-10' }`}>
+        <nav className="container mx-auto">
+            <div className={`flex flex-row justify-between items-center p-4 transform transition-all duration-500 ease-in-out ${ playAnimation ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-10' }`}>
                 <div>
                     <a href="/" className="flex flex-row">
                         <img src="/vite.svg" alt="Logo Niralys" />
@@ -53,11 +53,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden lg:block w-1/2">
-                    {returnList("flex flex-row justify-around items-left p-4 text-sm text-black")}
+                    {returnList("flex flex-row justify-around items-left p-4 text-sm text-black font-bold")}
                 </div>
             </div>
              
-            <div className={`fixed right-0 h-full w-full bg-white transform transition-all duration-800 ease-in-out ${ open ? 'translate-x-0' : 'translate-x-full' }`}>
+            <div className={`fixed z-1 right-0 h-full w-full bg-white transform transition-all duration-800 ease-in-out ${ open ? 'translate-x-0' : 'translate-x-full' }`}>
                 {returnList("flex flex-col justify-around items-left p-4 text-sm text-black")}
             </div>
             

@@ -2,13 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import image from '../assets/images/social-media-marketing-concept-marketing-with-applications.jpg';
 import teamWork from '../assets/images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg';
 import Cards from '../components/Cards';
+import Footer from '../components/Footer';
 
 const Homepage = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [visibleSections, setVisibleSections] = useState<string[]>([]);
     const sectionRefs = useRef<(HTMLDivElement | null) []>([]);
 
-    useEffect(() => {
+    useEffect(() => { 
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 600); // Délai avant le début du glissement
@@ -60,7 +61,7 @@ const Homepage = () => {
     ];
 
     return (
-        <div className="border-t-1 border-gray-300">
+        <div className="border-t-1 border-gray-300 relative">
             <div className="container relative mx-auto p-4 flex flex-col h-11/12 justify-around items-center md:flex-row xl:w-5/6 xl:max-w-6xl"
                 id="section1" 
                 ref={(el) => { sectionRefs.current[0] = el }}
@@ -70,7 +71,7 @@ const Homepage = () => {
 
                     <div className={`-z-1 transform transition-all duration-500 ease-in-out ${ isVisible ? 'translate-x-0 md:translate-y-0 opacity-100' : '-translate-x-full md:translate-x-0 md:translate-y-85 opacity-0' }`}>
                         <p className="text-lg md:text-sm lg:text-lg">
-                            🚀 Meilleure agence web et digitale!
+                            🚀 Meilleure agence web et digitale !
                         </p>
 
                         <h1 className="font-bold text-4xl text-dark-blue my-10 sm:text-4xl md:text-3xl lg:text-4xl lg:my-5">
@@ -81,8 +82,8 @@ const Homepage = () => {
                             Un marketing plus puissant, efficace et efficient pour la croissance de votre entreprise avec Niralys.
                         </p>
 
-                        <div className="w-fill flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-3/4 md:mx-0">
-                            <button className="bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</button>
+                        <div className="w-full flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-3/4 md:mx-0">
+                            <button className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</button>
                             <button className="border-1 border-dark-blue text-black py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Nous contacter</button>
                         </div>
                     </div>
@@ -149,22 +150,36 @@ const Homepage = () => {
                     </div>
                 </div>
             </div>
-            <div className="mx-auto p-4 h-screen xl:w-5/6 xl:max-w-8xl"
+
+            <div className="mx-auto p-4 xl:w-5/6 xl:max-w-8xl"
                 id="section5"
                 ref={(el) => { sectionRefs.current[3] = el }}
             >
-                <h2 className="font-bold text-4xl my-5 text-dark-blue text-center sm:text-4xl md:text-left">Découvrez nos domaines d'expertise</h2>
-                <div className="flex flex-col justify-around items-center h-96 md:flex-row">
+                <h2 className="font-bold text-4xl my-5 mb-10 text-dark-blue text-center sm:text-4xl md:text-left">Découvrez nos domaines d'expertise</h2>
+                <div className="flex flex-col justify-around items-center md:flex-row xl:h-96">
                     <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description}  />
                     <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description}  />
                     <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description}  />
                 </div>
-                <div className="flex flex-col justify-around items-center h-96 md:flex-row">
+                <div className="flex flex-col justify-around items-center md:flex-row xl:h-96">
                     <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description}  />
                     <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description}  />
                     <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description}  />
                 </div>
-            </div>  
+            </div>
+
+            <div className="flex flex-col justify-around items-center h-56 w-5/6 bg-white text-center sm:rounded-xl sm:shadow-lg shadow-dark-blue/60 z-1 relative mx-auto xl:-bottom-20">
+                <p className="font-bold text-xl text-dark-blue xl:text-5xl">Prêt à propulser votre projet ? 🧑‍💻 🚀 </p>
+                <p className="text-md text-dark-blue xl:text-xl">Notre équipe vous guide dans la réalisation de votre projet digital et vous accompagne pour atteindre vos objectifs !</p>
+                <button className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Contactez-nous !</button>
+            </div>
+
+            <Footer/>
+            {/* 
+                Demande de devis => contact 
+                Nos derniers articles
+            */}
+               
         </div>
     );
 }
