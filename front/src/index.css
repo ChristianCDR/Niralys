@@ -1,2 +1,14 @@
 
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');@import "tailwindcss";
+
+@theme {
+  --color-custom-gray: #F0EFEB;
+  --color-btn: #1f5c91;
+  --color-dark-blue: #1E3C58;
+  --color-light-blue: #104ACF;
+  --font-display: "Raleway", "Helvetica", "sans-serif";
+}
+
+body {
+  font-family: var(--font-display);
+}
