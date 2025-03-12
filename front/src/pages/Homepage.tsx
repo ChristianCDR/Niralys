@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import image from '../assets/images/social-media-marketing-concept-marketing-with-applications.jpg';
 import teamWork from '../assets/images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg';
+import Navbar from "../components/Navbar"
 import Cards from '../components/Cards';
 import Footer from '../components/Footer';
 
@@ -62,6 +63,7 @@ const Homepage = () => {
 
     return (
         <div className="border-t-1 border-gray-300 relative">
+            <Navbar/>
             <div className="container relative mx-auto p-4 flex flex-col h-11/12 justify-around items-center md:flex-row xl:w-5/6 xl:max-w-6xl"
                 id="section1" 
                 ref={(el) => { sectionRefs.current[0] = el }}
@@ -69,28 +71,28 @@ const Homepage = () => {
 
                 <div className="flex flex-col justify-around items-left text-center sm:w-full md:text-left md:h-96 lg:w-3/4">
 
-                    <div className={`-z-1 transform transition-all duration-500 ease-in-out ${ isVisible ? 'translate-x-0 md:translate-y-0 opacity-100' : '-translate-x-full md:translate-x-0 md:translate-y-85 opacity-0' }`}>
-                        <p className="text-lg md:text-sm lg:text-lg">
+                    <div className={`transform transition-all duration-500 ease-in-out ${ isVisible ? 'translate-x-0 opacity-100 md:translate-y-0' : '-translate-x-full -z-1 opacity-0 md:translate-x-0 md:translate-y-55' }`}>
+                        <p className={`text-lg md:text-sm lg:text-lg ${ isVisible ? 'transition-transform duration-300 ease-out translate-y-0 opacity-100' : 'translate-y-15 opacity-0'}`}>
                             🚀 Meilleure agence web et digitale !
                         </p>
 
-                        <h1 className="font-bold text-4xl text-dark-blue my-10 sm:text-4xl md:text-3xl lg:text-4xl lg:my-5">
+                        <h1 className={`font-bold text-4xl text-dark-blue my-10 sm:text-4xl md:text-3xl lg:text-4xl lg:my-5 ${ isVisible ? 'transition-transform duration-300 ease-out translate-y-0 opacity-100' : 'translate-y-1 opacity-0'}`}>
                             Augmentez vos revenus grâce à un marketing puissant !
                         </h1>
 
-                        <p className="text-lg md:text-sm lg:text-lg">
+                        <p className={`text-lg md:text-sm lg:text-lg ${ isVisible ? 'transition-transform duration-300 ease-out translate-y-0 opacity-100' : '-translate-y-20 opacity-0'}`}>
                             Un marketing plus puissant, efficace et efficient pour la croissance de votre entreprise avec Niralys.
                         </p>
 
-                        <div className="w-full flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-4/5 md:mx-0">
-                            <button className="font-bold bg-dark-blue text-white px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</button>
-                            <button className="border-1 border-dark-blue text-black px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Nous contacter</button>
+                        <div className={`w-full flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-4/5 md:mx-0 ${ isVisible ? 'transition-transform duration-300 ease-out translate-y-0 opacity-100' : '-translate-y-35 opacity-0'}`}>
+                            <a href="/" className="font-bold bg-dark-blue text-white px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</a>
+                            <a href="/contact" className="border-1 border-dark-blue text-black px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Nous contacter</a>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="absolute bottom-0 left-0 w-3/5 md:h-20 bg-white"></div>
+                <div className="absolute -bottom-8 left-0 w-3/5 bg-white md:h-30"></div>
 
                 <div className="my-10 sm:w-full">
                     <img src={image} alt="Image d'illustration" className={`mx-auto rounded-xl w-full max-w-lg shadow-lg shadow-dark-blue/50 md:h-96 md:object-cover transform ${ isVisible ? 'transition-transform duration-300 ease-out translate-y-0 opacity-100' : '-translate-y-30 opacity-0'}`}/>
@@ -167,7 +169,7 @@ const Homepage = () => {
             <div className="flex flex-col justify-around items-center h-56 w-5/6 bg-white text-center shadow-dark-blue/60 z-1 relative mx-auto md:rounded-xl md:shadow-lg md:mb-5 xl:-bottom-20">
                 <p className="font-bold text-xl text-dark-blue xl:text-5xl">Prêt à propulser votre projet ? 🧑‍💻 🚀 </p>
                 <p className="text-md text-dark-blue p-2 xl:text-xl">Notre équipe vous guide dans la réalisation de votre projet digital et vous accompagne pour atteindre vos objectifs !</p>
-                <button className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Contactez-nous !</button>
+                <a href="/contact" className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Contactez-nous !</a>
             </div>
 
             <Footer/>

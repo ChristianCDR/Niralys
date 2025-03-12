@@ -16,13 +16,13 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className="flex flex-row items-center">
-                        <a href="/" className="flex flex-row justify-around items-center">
+                        <a href="tel:0123345678" className="flex flex-row justify-around items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"/></svg>
                             <span className="ml-2">01 23 34 56 78</span>
                         </a>
                     </li>
                     <li className="flex flex-row items-center">
-                        <a href="/" className="flex flex-row justify-around items-center">
+                        <a href="mailto:contact@niralys.fr" className="flex flex-row justify-around items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"/></svg>
                             <span className="ml-2">contact@niralys.fr</span> 
                         </a>   
@@ -63,7 +63,7 @@ const Footer = () => {
                     <li className="font-bold text-xl">Ressources</li>
                     <li>À propos</li>
                     <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a href="/contact">Contact</a></li>
                     <li>FAQ</li>
                 </ul>
             </div>
