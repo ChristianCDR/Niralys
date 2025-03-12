@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
         <div className="flex flex-col justify-center items-center p-4 bg-dark-blue text-white text-center xl:text-left xl:h-126">
-            <div className="flex flex-col justify-around items-center mb-3 border-b-1 md:flex-row xl:h-11/12 xl:w-5/6 xl:max-w-8xl">
-                <ul className="flex flex-col justify-around items-center xl:items-start text-white h-56">
+            <div className="flex flex-col justify-around items-center mb-3 border-b-1 flex-wrap md:flex-row xl:h-11/12 xl:w-5/6 xl:max-w-8xl">
+                <ul className="flex flex-col justify-around items-center m-2 xl:items-start text-white h-56">
                     <li className="font-bold text-xl">
                         <a href="/" className="flex flex-row">
                             <img src="/vite.svg" alt="Logo Niralys"/>
@@ -43,7 +43,7 @@ const Footer = () => {
                     </li>
                 </ul>
 
-                <ul className="flex flex-col justify-around text-white mt-5 h-56">
+                <ul className="flex flex-col justify-around text-white m-2 mt-5 h-56">
                     <li className="font-bold text-xl">Développement Web</li>
                     <li>Création de site e-commerce</li>
                     <li>Création de site vitrine</li>
@@ -51,7 +51,7 @@ const Footer = () => {
                     <li>Maintenance de site internet</li>
                 </ul>
 
-                <ul className="flex flex-col justify-around text-white mt-5 h-56">
+                <ul className="flex flex-col justify-around text-white m-2 mt-5 h-56">
                     <li className="font-bold text-xl">Marketing Digital</li>
                     <li>Marketing SEO</li>
                     <li>Marketing SEA</li>
@@ -59,7 +59,7 @@ const Footer = () => {
                     <li>Marketing de contenu</li>
                 </ul>
 
-                <ul className="flex flex-col justify-around text-white mt-5 h-56">
+                <ul className="flex flex-col justify-around text-white m-2 mt-5 h-56">
                     <li className="font-bold text-xl">Ressources</li>
                     <li>À propos</li>
                     <li>Blog</li>

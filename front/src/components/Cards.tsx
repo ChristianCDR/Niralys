@@ -8,7 +8,7 @@ type Props = {
 
 const Cards = ({icon, title, description}:  Props ) => {
     return (
-        <div className={`flex flex-col justify-around items-center sm:w-sm h-80 text-center mb-8 p-2 rounded-xl shadow-lg shadow-dark-blue/50 transform ${icon ? 'transition-all duration-500 ease-in-out hover:scale-105 translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
+        <div className={`flex flex-col justify-around items-center max-w-sm h-80 text-center m-2 mb-8 p-2 rounded-xl shadow-lg shadow-dark-blue/50 transform ${icon ? 'transition-all duration-500 ease-in-out hover:scale-105 translate-y-0 opacity-100' : 'translate-y-20 opacity-0'} sm:w-sm`}>
             <div className="rounded-2xl bg-light-blue">
                 {icon}
             </div>

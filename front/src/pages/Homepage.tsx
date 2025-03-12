@@ -82,9 +82,9 @@ const Homepage = () => {
                             Un marketing plus puissant, efficace et efficient pour la croissance de votre entreprise avec Niralys.
                         </p>
 
-                        <div className="w-full flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-3/4 md:mx-0">
-                            <button className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</button>
-                            <button className="border-1 border-dark-blue text-black py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Nous contacter</button>
+                        <div className="w-full flex flex-col justify-between items-center mx-auto sm:flex-row sm:w-1/2 md:w-4/5 md:mx-0">
+                            <button className="font-bold bg-dark-blue text-white px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">En savoir plus</button>
+                            <button className="border-1 border-dark-blue text-black px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Nous contacter</button>
                         </div>
                     </div>
 
@@ -118,32 +118,30 @@ const Homepage = () => {
                 </div>
             </div>
 
-            <div className="mx-auto p-4 mb-10 xl:w-5/6 xl:max-w-8xl"
+            <div className="mx-auto p-4 mb-5 md:max-w-7xl xl:w-5/6"
                 id="section4"
                 ref={(el) => { sectionRefs.current[3] = el }}
             >
                 <h2 className="font-bold text-4xl my-5 text-dark-blue text-center sm:text-4xl md:text-left">Notre mission</h2>
-                <div className="flex flex-col justify-around md:h-65">
-                    <div className="flex flex-col justify-around items-center h-96 md:flex-row">
-                        <div className="w-64 flex flex-row justify-around items-center p-2 rounded-xl shadow-lg shadow-dark-blue/40">
+                <div className="flex flex-col justify-around">
+                    <div className="flex flex-col justify-around items-center h-150 flex-wrap mx-auto md:flex-row md:h-96 md:max-w-5xl">
+                        <div className="w-64 flex flex-row justify-around items-center p-2 m-2 rounded-xl shadow-lg shadow-dark-blue/40">
                             <svg xmlns="http://www.w3.org/2000/svg" width={64}height={64}viewBox="0 0 24 24" className="fill-dark-blue"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
                             <p className="w-2/3">Développer votre présence en ligne</p>
                         </div>
-                        <div className="w-64 flex flex-row justify-around items-center p-2 rounded-xl shadow-lg shadow-dark-blue/40">
+                        <div className="w-64 flex flex-row justify-around items-center p-2 m-2 rounded-xl shadow-lg shadow-dark-blue/40">
                             <svg xmlns="http://www.w3.org/2000/svg" width={64}height={64}viewBox="0 0 64 64" className="fill-dark-blue"><path d="M55.217 8.782c-9.044-9.043-23.708-9.043-32.752 0c-8.4 8.402-8.985 21.645-1.779 30.735l-1.893 1.893l-1.572-1.572L4.376 52.682c-.754-.479-1.335-.684-1.572-.445l-.703.701C.958 54.081 9.919 63.044 11.062 61.9l.703-.702c.238-.237.031-.819-.446-1.575L24.163 46.78l-1.573-1.572l1.894-1.892c9.091 7.207 22.331 6.621 30.734-1.78c9.042-9.045 9.044-23.708-.001-32.754m-2.729 30.024c-7.538 7.536-19.757 7.538-27.293 0c-7.537-7.535-7.537-19.758 0-27.293c7.534-7.537 19.757-7.537 27.293 0s7.534 19.756 0 27.293"/><path d="M55.317 23.902a16.6 16.6 0 0 1-3.789 5.879c-6.513 6.514-17.076 6.514-23.592-.003a16.6 16.6 0 0 1-4.813-10.243c-2.256 5.949-1 12.926 3.79 17.716c6.515 6.515 17.078 6.515 23.593 0c3.654-3.651 5.255-8.577 4.811-13.349"/></svg>
                             <p className="w-2/3">Améliorer votre visibilité</p>
                         </div>
-                        <div className="w-64 flex flex-row justify-around items-center p-2 rounded-xl shadow-lg shadow-dark-blue/40">
+                        <div className="w-64 flex flex-row justify-around items-center p-2 m-2 rounded-xl shadow-lg shadow-dark-blue/40">
                             <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} viewBox="0 0 24 24" className="fill-dark-blue"><path d="M4 2v18h18v2H2V2zm17.914 6L15.5 14.414l-4-4l-5 5L5.086 14L11.5 7.586l4 4l5-5z"/></svg>
                             <p className="w-2/3">Booster vos ventes en ligne</p>
                         </div>
-                    </div>
-                    <div className="flex flex-col justify-around items-center h-62 md:flex-row md:w-3/4 mx-auto">
-                        <div className="w-64 flex flex-row justify-around items-center p-2 rounded-xl shadow-lg shadow-dark-blue/40">
+                        <div className="w-64 flex flex-row justify-around items-center p-2 m-2 rounded-xl shadow-lg shadow-dark-blue/40">
                             <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} viewBox="0 0 16 16" className="fill-dark-blue"><path fill-rule="evenodd" d="M13.293 0c.39 0 .707.317.707.707V2h1.293a.707.707 0 0 1 .5 1.207l-1.46 1.46A1.14 1.14 0 0 1 13.53 5h-1.47L8.53 8.53a.75.75 0 0 1-1.06-1.06L11 3.94V2.47c0-.301.12-.59.333-.804l1.46-1.46a.7.7 0 0 1 .5-.207M2.5 8a5.5 5.5 0 0 1 6.598-5.39a.75.75 0 0 0 .298-1.47A7 7 0 1 0 14.86 6.6a.75.75 0 0 0-1.47.299q.109.533.11 1.101a5.5 5.5 0 1 1-11 0m5.364-2.496a.75.75 0 0 0-.08-1.498A4 4 0 1 0 11.988 8.3a.75.75 0 0 0-1.496-.111a2.5 2.5 0 1 1-2.63-2.686" clip-rule="evenodd"/></svg>
                             <p className="w-2/3">Captiver votre audience</p>
                         </div>
-                        <div className="w-64 flex flex-row justify-around items-center p-2 rounded-xl shadow-lg shadow-dark-blue/40">
+                        <div className="w-64 flex flex-row justify-around items-center p-2 m-2 rounded-xl shadow-lg shadow-dark-blue/40">
                             <svg xmlns="http://www.w3.org/2000/svg" width={60} height={60} viewBox="0 0 20 20" className="fill-dark-blue"><path fill-rule="evenodd" d="M6 0h9c1.105 0 2 .943 2 2.105v15.79C17 19.057 16.105 20 15 20H6c-1.105 0-2-.943-2-2.105V2.105C4 .943 4.895 0 6 0m1 2a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-1v1.5a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V2z" clip-rule="evenodd"/></svg>
                             <p className="w-2/3">Animer vos réseaux sociaux avec efficacité</p>
                         </div>
@@ -151,26 +149,24 @@ const Homepage = () => {
                 </div>
             </div>
 
-            <div className="mx-auto p-4 xl:w-5/6 xl:max-w-8xl"
+            <div className="mx-auto p-4 md:max-w-7xl xl:w-5/6"
                 id="section5"
                 ref={(el) => { sectionRefs.current[3] = el }}
             >
                 <h2 className="font-bold text-4xl my-5 mb-10 text-dark-blue text-center sm:text-4xl md:text-left">Découvrez nos domaines d'expertise</h2>
-                <div className="flex flex-col justify-around items-center md:flex-row xl:h-96">
-                    <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description}  />
-                    <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description}  />
-                    <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description}  />
-                </div>
-                <div className="flex flex-col justify-around items-center md:flex-row xl:h-96">
-                    <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description}  />
-                    <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description}  />
-                    <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description}  />
+                <div className="flex flex-col justify-around items-center md:flex-row md:flex-wrap">
+                    <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description} />
+                    <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description} />
+                    <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description} />
+                    <Cards icon={cardInfos[0].icon} title={cardInfos[0].title} description={cardInfos[0].description} />
+                    <Cards icon={cardInfos[1].icon} title={cardInfos[1].title} description={cardInfos[1].description} />
+                    <Cards icon={cardInfos[2].icon} title={cardInfos[2].title} description={cardInfos[2].description} />
                 </div>
             </div>
 
-            <div className="flex flex-col justify-around items-center h-56 w-5/6 bg-white text-center sm:rounded-xl sm:shadow-lg shadow-dark-blue/60 z-1 relative mx-auto xl:-bottom-20">
+            <div className="flex flex-col justify-around items-center h-56 w-5/6 bg-white text-center shadow-dark-blue/60 z-1 relative mx-auto md:rounded-xl md:shadow-lg md:mb-5 xl:-bottom-20">
                 <p className="font-bold text-xl text-dark-blue xl:text-5xl">Prêt à propulser votre projet ? 🧑‍💻 🚀 </p>
-                <p className="text-md text-dark-blue xl:text-xl">Notre équipe vous guide dans la réalisation de votre projet digital et vous accompagne pour atteindre vos objectifs !</p>
+                <p className="text-md text-dark-blue p-2 xl:text-xl">Notre équipe vous guide dans la réalisation de votre projet digital et vous accompagne pour atteindre vos objectifs !</p>
                 <button className="font-bold bg-dark-blue text-white py-2 px-4 my-4 p-2 rounded-xl shadow-lg shadow-dark-blue/40">Contactez-nous !</button>
             </div>
 
